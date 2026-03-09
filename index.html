@@ -3,10 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/styles/style.css">
     <title>Formulário de almoço</title>
 </head>
 <body>
-    
+     <div class="container">
+          <div class="logo">
+               <img src="src/images/logo-500px.png" alt="Logo do IFBA - Campus Irecê">
+          </div>
+          <div class="navbar">
+               <nav>
+                    <a href="#">Formulário</a>
+                    <a href="#">Cardápio</a>
+                    <a href="#">Relatar Erro</a>
+                    <a href="#">Sobre</a>
+               </nav>
+               <div>
+                    <a href="#">Login</a>
+               </div>
+          </div>
+          <header>
+               <h1>Formulário de almoço</h1>
+               <p>Responda esse formulário para garantir seu almoço.</p>
+          </header>
+          <form action="">
+               <div class="fieldset">
+                    <label for="iname">Nome Completo</label>
+                    <input type="text" id="iname" placeholder="Digite seu nome completo" required>
+               </div>
+               <div class="fieldset">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" id="iemail" placeholder="Digite seu e-mail" required>
+               </div>
+               <div class="fieldset">
+                    <label for="imat">Matrícula</label>
+                    <input type="text" id="imat" placeholder="Digite sua matrícula">
+               </div>
+               <div class="fieldset turma">
+                    <label for="turmas">Turma</label>
+                    <select>
+                         <option value=""> 1° ano - Biocombustivéis - Matutino></option>
+                         <option value="">1° ano - Biocombustivéis - Vespertino</option>
+                         <option value="">2° ano - Biocombustivéis - Matutino</option>
+                         <option value="">2° ano - Biocombustivéis - Vespertino</option>
+                         <option value="">3° ano - Biocombustivéis - Matutino</option>
+                         <option value="">3° ano - Biocombustivéis - Vespertino</option>
+                         <option value="">4° ano - Biocombustivéis - Matutino</option>
+                         <option value="">4° ano - Biocombustivéis - Vespertino</option>
+                         <option value="">1° ano - Eletromecânica - Matutino</option>
+                         <option value="">1° ano - Eletromecânica - Vespertino</option>
+                         <option value="">2° ano - Eletromecânica - Matutino</option>
+                         <option value="">2° ano - Eletromecânica - Vespertino</option>
+                         <option value="">3° ano - Eletromecânica - Matutino</option>
+                         <option value="">3° ano - Eletromecânica - Vespertino</option>
+                         <option value="">4° ano - Eletromecânica - Matutino</option>
+                         <option value="">4° ano - Eletromecânica - Vespertino</option>
+                         <option value="">1° ano - Informática - Matutino</option>
+                         <option value="">1° ano - Informática - Vespertino</option>
+                         <option value="">2° ano - Informática - Matutino</option>
+                         <option value="">2° ano - Informática - Vespertino</option>
+                         <option value="">3° ano - Informática - Matutino</option>
+                         <option value="">3° ano - Informática - Vespertino</option>
+                         <option value="">4° ano - Informática - Matutino</option>
+                         <option value="">4° ano - Informática - Vespertino</option>
+                    </select>
+               </div>
+               <div class="fieldset justificativa">
+                    <h2>Justificativa de Permanência</h2>
+                    <label for="contraturno">
+                         <input type="radio" name="justificativa" id="contraturno">
+                         Contraturno
+                    </label>
+                    <label for="transporte">
+                         <input type="radio" name="justificativa" id="transporte">
+                         Transporte
+                    </label>
+                    <label for="outro">
+                         <input type="radio" name="justificativa" id="outro">
+                         Outro
+                    </label> 
+               </div>
+               <div class="fieldset">
+                    <label for="idata">Data</label>
+                    <input type="date" name="" id="idata">
+               </div>
+               <input type="submit" value="Confirmar">
+          </form>
+          <footer>
+               <p>@ 2026 | Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA) - Campus Irecê</p>
+          </footer>
+     </div>
 </body>
 </html>
