@@ -3,8 +3,8 @@
 
 :root {
     --cor0:#67C86D;
+    --cor1: #374659;
     --bg-color:#e4f3e5;
-
     --fonte-padrao: "Poppins", Helvetica, sans-serif;
 }
 
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #374659;
+    color: var(--cor1);
     font-family: var(--fonte-padrao);
 }
 
@@ -104,11 +104,19 @@ form .justificativa input[type="radio"]{
     margin-right: 8px;
 }
 
-form .turma select{
+form .turmas input{
     width: 100%;
     padding: 10px;
     border: none;
+    border: 1px solid #37465994;
     border-radius: 8px;
+}
+
+form .turmas 
+
+form .turmas input:focus{
+    box-shadow: none;
+    outline: none;
 }
 
 form input[type="submit"]{
