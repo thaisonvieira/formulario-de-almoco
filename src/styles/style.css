@@ -112,8 +112,6 @@ form .turmas input{
     border-radius: 8px;
 }
 
-form .turmas 
-
 form .turmas input:focus{
     box-shadow: none;
     outline: none;
