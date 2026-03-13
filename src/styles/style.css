@@ -4,6 +4,7 @@
 :root {
     --cor0:#67C86D;
     --cor1: #374659;
+    --cor2: #cd191e;
     --bg-color:#e4f3e5;
     --fonte-padrao: "Poppins", Helvetica, sans-serif;
 }
@@ -75,6 +76,7 @@ form input[type="text"],
 form input[type="email"] {
     width: 100%;
     height: 40px;
+    font-size: 15px;
     border: none;
     border-bottom: 2px solid var(--cor0);
 }
@@ -83,6 +85,20 @@ form input[type="text"]:focus,
 form input[type="email"]:focus{
     box-shadow: none;
     outline: none;
+}
+
+form #iname,
+form #imat{
+    text-transform: uppercase;
+}
+
+form #iemail{
+    text-transform: lowercase;
+}
+
+form input::placeholder{
+    text-transform: none;
+    font-size: 14px;
 }
 
 form .justificativa h2{
@@ -115,6 +131,23 @@ form .turmas input{
 form .turmas input:focus{
     box-shadow: none;
     outline: none;
+}
+
+form input[type="date"]{
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    font-family: monospace;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input[type="date"]:focus{
+    border: 2px solid var(--cor0);
 }
 
 form input[type="submit"]{
