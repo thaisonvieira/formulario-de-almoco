@@ -65,18 +65,25 @@ form .fieldset {
     border-radius: 10px;
 }
 
-form label{
+form .form-label{
     display: inline-block;
     cursor: pointer;
+    font-size: 17px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+form .form-label::after{
+    content: '*';
+    color: var(--cor2);
+    font-weight: 300;
 }
 
 form input[type="text"], 
 form input[type="email"] {
     width: 100%;
     height: 40px;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     border-bottom: 2px solid var(--cor0);
 }
@@ -101,13 +108,6 @@ form input::placeholder{
     font-size: 14px;
 }
 
-form .justificativa h2{
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
 form .justificativa label{
     display: flex;
     font-weight: 400;
@@ -124,7 +124,7 @@ form .turmas input{
     width: 100%;
     padding: 10px;
     border: none;
-    border: 1px solid #37465994;
+    border: 1px solid #ccc;
     border-radius: 8px;
 }
 
