@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Formulário de almoço</title>
 </head>
 <body>
@@ -27,21 +28,24 @@
                <p>Responda esse formulário para garantir seu almoço.</p>
           </header>
           <form action="">
-               <div class="fieldset name">
+               <div class="field name">
                     <label for="iname" class="form-label">Nome Completo:</label>
                     <input type="text" id="iname" placeholder="Digite seu nome completo" required>
                </div>
-               <div class="fieldset">
+               <div class="field">
                     <label for="iemail" class="form-label">E-mail:</label>
                     <input type="email" id="iemail" placeholder="Digite seu e-mail" required>
                </div>
-               <div class="fieldset">
+               <div class="field">
                     <label for="imat" class="form-label">Matrícula:</label>
                     <input type="text" id="imat" placeholder="Digite sua matrícula">
                </div>
-               <div class="fieldset turmas">
+               <div class="field turmas">
                     <label for="turmas" class="form-label">Turma:</label>
-                    <input list="list_turmas" name="turmas" autocomplete="off" placeholder="Selecione a sua turma">
+                    <div class="input-area">
+                         <input list="list_turmas" name="turmas" autocomplete="off" placeholder="Selecione a sua turma">
+                         <i class="icon fa-solid fa-magnifying-glass"></i>
+                    </div>
                     <datalist id="list_turmas">
                          <option value="1° ano - Biocombustivéis - Matutino"></option>
                          <option value="1° ano - Biocombustivéis - Vespertino"></option>
@@ -69,7 +73,7 @@
                          <option value="4° ano - Informática - Vespertino"></option>
                     </datalist>
                </div>
-               <div class="fieldset justificativa">
+               <div class="field justificativa">
                     <h2 class="form-label">Justificativa de Permanência:</h2>
                     <label for="contraturno">
                          <input type="radio" name="justificativa" id="contraturno">
@@ -84,7 +88,7 @@
                          Outro
                     </label> 
                </div>
-               <div class="fieldset date">
+               <div class="field date">
                     <label for="idata" class="form-label">Data:</label>
                     <input type="date" name="" id="idata">
                </div>
