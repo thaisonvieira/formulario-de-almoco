@@ -103,17 +103,26 @@ form input::placeholder{
     font-size: 14px;
 }
 
-form .justificativa label{
+/*(start) ----- Estiliza a seção de justificativa de permanencia -----*/
+
+.justification fieldset{
+    border: none;
+    line-height: 2.5em;
+}
+
+.justification fieldset label{
     display: flex;
     font-weight: 400;
     align-items: center;
 }
 
-form .justificativa input[type="radio"]{
+.justification fieldset input[type="radio"]{
     width: 20px;
     height: 20px;
     margin-right: 8px;
 }
+
+/*(end) ----- Estiliza a seção de justificativa de permanencia -----*/
 
 form .input-area{
     position: relative;
@@ -151,7 +160,6 @@ form input[type="date"]{
     border: none;
     border: 2px solid #ccc;
     outline: none;
-    transition: border-color 0.3s;
 }
 
 form input[type="date"]:focus{

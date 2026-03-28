@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Formulário de almoço</title>
 </head>
 <body>
      <div class="container">
           <div class="logo">
-               <img src="src/images/logo-500px.png" alt="Logo do IFBA - Campus Irecê">
+               <img src="./assets/images/logo-500px.png" alt="Logo do IFBA - Campus Irecê">
           </div>
           <div class="navbar">
                <nav>
@@ -32,21 +32,21 @@
                     <label for="iname" class="form-label">Nome Completo:</label>
                     <input type="text" id="iname" placeholder="Digite seu nome completo" required>
                </div>
-               <div class="field">
+               <div class="field email">
                     <label for="iemail" class="form-label">E-mail:</label>
                     <input type="email" id="iemail" placeholder="Digite seu e-mail" required>
                </div>
-               <div class="field">
-                    <label for="imat" class="form-label">Matrícula:</label>
-                    <input type="text" id="imat" placeholder="Digite sua matrícula">
+               <div class="field student-id">
+                    <label for="istudent-id" class="form-label">Matrícula:</label>
+                    <input type="text" id="istudent-id" placeholder="Digite sua matrícula">
                </div>
-               <div class="field turmas">
-                    <label for="turmas" class="form-label">Turma:</label>
+               <div class="field class">
+                    <label for="class" class="form-label">Turma:</label>
                     <div class="input-area">
-                         <input list="list_turmas" name="turmas" autocomplete="off" placeholder="Selecione a sua turma">
+                         <input list="list_classes" name="class" autocomplete="off" placeholder="Selecione a sua turma">
                          <i class="icon fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <datalist id="list_turmas">
+                    <datalist id="list_classes">
                          <option value="1° ano - Biocombustivéis - Matutino"></option>
                          <option value="1° ano - Biocombustivéis - Vespertino"></option>
                          <option value="2° ano - Biocombustivéis - Matutino"></option>
@@ -73,24 +73,26 @@
                          <option value="4° ano - Informática - Vespertino"></option>
                     </datalist>
                </div>
-               <div class="field justificativa">
-                    <h2 class="form-label">Justificativa de Permanência:</h2>
-                    <label for="contraturno">
-                         <input type="radio" name="justificativa" id="contraturno">
-                         Contraturno
-                    </label>
-                    <label for="transporte">
-                         <input type="radio" name="justificativa" id="transporte">
-                         Transporte
-                    </label>
-                    <label for="outro">
-                         <input type="radio" name="justificativa" id="outro">
-                         Outro
-                    </label> 
+               <div class="field justification">
+                    <fieldset>
+                         <legend class="form-label">Justificativa de Permanência:</legend>
+                         <label>
+                              <input type="radio" name="justification-options">
+                              Contraturno
+                         </label>
+                         <label>
+                              <input type="radio" name="justification-options">
+                              Transporte
+                         </label>
+                         <label>
+                              <input type="radio" name="justification-options">
+                              Outro
+                         </label>
+                    </fieldset>
                </div>
                <div class="field date">
-                    <label for="idata" class="form-label">Data:</label>
-                    <input type="date" name="" id="idata">
+                    <label for="idate" class="form-label">Data:</label>
+                    <input type="date" name="" id="idate">
                </div>
                <input type="submit" value="Confirmar">
           </form>
