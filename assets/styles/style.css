@@ -63,9 +63,7 @@ nav ul li a::after{
     left: 0%;
     bottom: 0%;
     background-color: var(--color1);
-    transition-property: width;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: width .3s ease-in-out;
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -202,9 +200,46 @@ form input[type="date"]:focus{
     border: 2px solid var(--color0);
 }
 
-form input[type="submit"]{
-    margin-top: 20px;
+/* -------- (inicio) Botão submit e reset ---------*/
+
+.btn-area{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
+.btn-area button{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    width: 140px;
+    color: #fff;
+    text-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.192);
+    font-weight: 400;
+    background-color: var(--color0);
+    transition-property: background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: #60bb66;
+}
+
+button[type="reset"]{
+    width: 100px;
+    background-color: transparent;
+}
+button[type="reset"]:hover{
+    background-color: #D0D0D7;
+}
+
+/* -------- (fim) Botão submit e reset ---------*/
 
 footer{
     padding: 70px 0px;
