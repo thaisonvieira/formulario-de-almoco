@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Formulário de almoço</title>
 </head>
 <body>
      <div class="container">
           <div class="logo">
-               <img src="../assets/images/logo-500px.png" alt="Logo do IFBA - Campus Irecê">
+               <picture>
+                    <!-- Imagem para telas grandes -->
+                    <source media="(min-width: 800px)" srcset="../assets/images/logo-500px.png">
+                    <!-- Imagem padrão para telas pequenas -->
+                    <img src="./assets/images/logo-400px.png" alt="Logo do IFBA - Campus Irecê">
+               </picture>
           </div>
-          <nav>
-               <ul>
-                    <li><a href="#" class="active">Formulário</a></li>
-                    <li><a href="#">Cardápio</a></li>
-                    <li><a href="#">Relatar Erro</a></li>
-                    <li><a href="#">Sobre</a></li>
-               </ul>
-               <ul>
-                    <li><a href="#">Login</a></li>
-               </ul>
-          </nav>
-          <header>
+          <header>     
+               <button type="button" class="btn-menu" onclick="openMenu()">
+                    <i class="icon-burguer fa-solid fa-bars"></i>
+               </button>
+               <nav id="navbar">
+                    <ul>
+                         <li><a href="#" class="active">Formulário</a></li>
+                         <li><a href="#">Cardápio</a></li>
+                         <li><a href="#">Relatar Erro</a></li>
+                         <li><a href="#">Sobre</a></li>
+                    </ul>
+                    <ul>
+                         <li><a href="#">Login</a></li>
+                    </ul>
+               </nav> 
+          </header>
+          <div class="header-form">
                <h1>Formulário de almoço</h1>
                <p>Responda esse formulário para garantir seu almoço.</p>
-          </header>
+          </div>
           <form action="">
                <div class="field name">
                     <label for="iname" class="form-label">Nome Completo:</label>
@@ -38,7 +48,7 @@
                </div>
                <div class="field student-id">
                     <label for="istudent-id" class="form-label">Matrícula:</label>
-                    <input type="text" id="istudent-id" placeholder="Digite sua matrícula">
+                    <input type="text" id="istudent-id" placeholder="Digite sua matrícula" required>
                </div>
                <div class="field class">
                     <label for="class" class="form-label">Turma:</label>
@@ -103,5 +113,6 @@
                <p>@ 2026 | Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA) - Campus Irecê</p>
           </footer>
      </div>
+     <!--<script src="assets/scripts/main.js"></script>-->
 </body>
 </html>
